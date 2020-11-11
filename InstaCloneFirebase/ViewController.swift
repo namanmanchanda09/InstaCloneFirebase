@@ -8,12 +8,22 @@
 import UIKit
 
 class ViewController: UIViewController {
-
+    @IBOutlet var emailText: UITextField!
+    @IBOutlet var passwordText: UITextField!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view.
     }
 
-
+    @IBAction func signInClicked(_ sender: UIButton) {
+        performSegue(withIdentifier: "toFeedVC", sender: nil)
+    }
+    
+    
+    @IBAction func signUpClicked(_ sender: UIButton) {
+    }
+    
 }
+
+ 
 
