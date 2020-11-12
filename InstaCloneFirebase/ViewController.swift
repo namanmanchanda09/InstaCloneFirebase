@@ -14,10 +14,21 @@ class ViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+
     }
 
     @IBAction func signInClicked(_ sender: UIButton) {
-        performSegue(withIdentifier: "toFeedVC", sender: nil)
+        if emailText.text != "" && passwordText.text != ""{
+            Auth.auth().signIn(withEmail: emailText.text!, password: passwordText.text!) { (authdata, error) in
+                if error != nil{
+                    self.makeAlert(titleInput: "Error", messageInput: error?.localizedDescription ?? "Error")
+                }else{
+                    self.performSegue(withIdentifier: "toFeedVC", sender: nil)
+                }
+            }
+        }else{
+            makeAlert(titleInput: "Error", messageInput: "Username/Password?")
+        }
     }
     
     
@@ -33,7 +44,7 @@ class ViewController: UIViewController {
             }
             
         }else{
-            makeAlert(titleInput: "Error", messageInput: "Username/Password missing")
+            makeAlert(titleInput: "Error", messageInput: "Username/Password?")
 
         }
 
