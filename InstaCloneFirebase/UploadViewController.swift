@@ -60,7 +60,7 @@ class UploadViewController: UIViewController, UIImagePickerControllerDelegate & 
                             let imageUrl = url?.absoluteString
                             print(imageUrl!)
                             
-                            // Database
+                            
                             
                             
                             
