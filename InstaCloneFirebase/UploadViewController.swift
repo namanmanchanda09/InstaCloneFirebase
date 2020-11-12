@@ -61,6 +61,15 @@ class UploadViewController: UIViewController, UIImagePickerControllerDelegate & 
                             print(imageUrl!)
                             
                             // Database
+                            
+                            
+                            
+                            
+                            
+                            
+                            
+                            
+                            
                         }
                     }
                 }
