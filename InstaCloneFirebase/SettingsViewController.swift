@@ -15,6 +15,22 @@ class SettingsViewController: UIViewController {
         // Do any additional setup after loading the view.
     }
     
+    @IBAction func logoutClicked(_ sender: UIButton) {
+        performSegue(withIdentifier: "toViewController", sender: nil)
+        
+    }
+    
+
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
 
     /*
     // MARK: - Navigation
