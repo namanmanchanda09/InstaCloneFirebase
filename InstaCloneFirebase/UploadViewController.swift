@@ -61,8 +61,6 @@ class UploadViewController: UIViewController, UIImagePickerControllerDelegate & 
                             print(imageUrl!)
                             
                             // Database
-                            
-                            
                             let firestoreDatabase = Firestore.firestore()
                             var firestoreReference : DocumentReference?
                             let firestorePost = [
@@ -77,26 +75,14 @@ class UploadViewController: UIViewController, UIImagePickerControllerDelegate & 
                                     self.makeAlert(titleInput: "Error", messageInput: error?.localizedDescription ?? "Error")
                                 }
                             })
-                            
-                            
-                            
-                            
-                            
-                            
-                            
-                            
-                            
                         }
                     }
                 }
             }
         }
     }
-
-
-
-
-
+    
+    
 
 }
 
