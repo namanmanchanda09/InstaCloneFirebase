@@ -130,6 +130,12 @@
                                                     <nil key="textColor"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
+                                                <label hidden="YES" opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lxO-75-X8H">
+                                                    <rect key="frame" x="352" y="11" width="42" height="22"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
                                             </subviews>
                                             <constraints>
                                                 <constraint firstAttribute="trailingMargin" secondItem="ABV-fI-Luh" secondAttribute="trailing" constant="13" id="0eu-d7-rgk"/>
@@ -143,17 +149,22 @@
                                                 <constraint firstItem="ABV-fI-Luh" firstAttribute="top" secondItem="Om7-8o-t48" secondAttribute="bottom" constant="59" id="M0k-Ys-tqD"/>
                                                 <constraint firstItem="sNB-Rc-Lev" firstAttribute="top" secondItem="Om7-8o-t48" secondAttribute="bottom" constant="22" id="MTv-zc-OyM"/>
                                                 <constraint firstItem="Om7-8o-t48" firstAttribute="trailing" secondItem="p5T-bW-cuK" secondAttribute="trailingMargin" id="NH4-yv-X1P"/>
+                                                <constraint firstItem="lxO-75-X8H" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="MNB-eU-Q9D" secondAttribute="trailing" constant="8" symbolic="YES" id="O0h-V7-1fu"/>
+                                                <constraint firstItem="lxO-75-X8H" firstAttribute="baseline" secondItem="MNB-eU-Q9D" secondAttribute="baseline" id="PJJ-xQ-LjU"/>
                                                 <constraint firstItem="Om7-8o-t48" firstAttribute="leading" secondItem="MNB-eU-Q9D" secondAttribute="leading" id="UhM-nx-nga"/>
                                                 <constraint firstItem="RWb-io-Pje" firstAttribute="centerY" secondItem="ABV-fI-Luh" secondAttribute="centerY" id="XHc-Rg-YSz"/>
                                                 <constraint firstItem="MNB-eU-Q9D" firstAttribute="top" secondItem="p5T-bW-cuK" secondAttribute="topMargin" id="XO4-Fh-Tr5"/>
                                                 <constraint firstItem="RWb-io-Pje" firstAttribute="leading" secondItem="sNB-Rc-Lev" secondAttribute="leading" id="YDd-Yz-FMq"/>
+                                                <constraint firstItem="lxO-75-X8H" firstAttribute="trailing" secondItem="Om7-8o-t48" secondAttribute="trailing" id="bsu-eK-JN5"/>
                                                 <constraint firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="sNB-Rc-Lev" secondAttribute="trailing" constant="20" symbolic="YES" id="hI1-yQ-T85"/>
+                                                <constraint firstItem="lxO-75-X8H" firstAttribute="centerY" secondItem="MNB-eU-Q9D" secondAttribute="centerY" id="jq3-QP-7pG"/>
                                                 <constraint firstItem="Om7-8o-t48" firstAttribute="top" secondItem="MNB-eU-Q9D" secondAttribute="bottom" constant="17" id="qPM-0M-wcc"/>
                                                 <constraint firstItem="RWb-io-Pje" firstAttribute="bottom" secondItem="p5T-bW-cuK" secondAttribute="bottomMargin" id="rm1-NI-gWP"/>
                                             </constraints>
                                         </tableViewCellContentView>
                                         <connections>
                                             <outlet property="commentLabel" destination="sNB-Rc-Lev" id="zw9-9P-Bed"/>
+                                            <outlet property="documentIdLabel" destination="lxO-75-X8H" id="7SL-93-7mk"/>
                                             <outlet property="likeLabel" destination="ABV-fI-Luh" id="joT-Eq-nnx"/>
                                             <outlet property="userEmailLabel" destination="MNB-eU-Q9D" id="L7h-im-Jf4"/>
                                             <outlet property="userImageView" destination="Om7-8o-t48" id="InC-4Y-KSV"/>
